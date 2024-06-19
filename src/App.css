@@ -1,0 +1,156 @@
+/* Style for the card container */
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 300px; /* Adjust the width as needed */
+  border: 1px solid #ccc; /* Optional: border for the card */
+  border-radius: 8px; /* Optional: rounded corners */
+  /* Ensure content does not overflow the card */
+  margin: 10px; /* Optional: space around the card */
+  justify-content: space-evenly;
+  position: relative;
+
+}
+
+/* Style for the image within the card */
+.box img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 100%; /* Image width equal to card width */
+  height: 50%; /* Image height equal to half of the card height */
+  object-fit:cover; /* Ensure the image covers the area without distortion */
+  display: block; /* Remove any default spacing/margin */
+  margin: 0; /* Ensure no margin around the image */
+}
+
+/* Style for the card body */
+.card_body {
+  padding: 5px; /* Optional: padding inside the card body */
+  box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+/* Style for the h5 tag */
+.card_body h5 {
+  margin: 0 0 8px; /* Margin bottom for spacing */
+  font-size: 1.25em; /* Adjust the font size as needed */
+  text-align: center;
+}
+
+/* Style for the p tag */
+.card_body p {
+  margin: 0 5px 16px; /* Margin bottom for spacing */
+  font-size: 1em; /* Adjust the font size as needed */
+  color: #666; /* Optional: text color */
+  text-align: justify;
+}
+
+/* Style for the anchor tag */
+.card_body {
+  position: relative; /* Ensure the card body is positioned relative to its normal position */
+}
+
+.card_body a {
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Optional: make the link bold */
+  position: absolute; /* Position the link absolutely */
+  bottom: 0px; /* Adjust the bottom position as needed */
+  left: 50%; /* Position the link at the horizontal center */
+  transform: translateX(-50%); /* Center the link by shifting it left by 50% of its width */
+}
+
+/* Additional styling for the card, if needed */
+
+.box img {
+  height: 50%; /* Reiterating height is 50% of the card */
+}
+
+.card_body {
+  flex: 1; /* Take the remaining space */
+}
+
+.News{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.h11{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-style: italic;
+  
+}
+
+.navigation{
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.button-pair {
+  scale: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  bottom: 0%;
+  z-index: 0;
+  padding: 4px;
+  width: 100%;
+  position: fixed;
+  
+}
+
+.button-pair .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition-duration: 0.5s;
+}
+
+.button-pair .btn-previous {
+  margin-right: 5px;
+}
+
+.button-pair .btn-next {
+  margin-left: 5px;
+}
+
+.button-pair .btn:hover {
+  outline: none;
+  /*box-shadow: 0 0 15px blue; /* Glowing effect */
+  opacity: 1; /* Slightly decrease the opacity */
+  
+}
+
+.loading{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 25%;
+  height: 25vw;
+}
+
+.author{
+  position: absolute;
+  top: 0; /* Overflowing above the image */
+  transform: translateY(-50%);
+  right: 2px;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 0.7em;
+  z-index: 0;
+}
+
+.publishedAt{
+  font-size: .875em;
+  opacity: 0.5;
+  color: var(--bs-secondary-color) !important;
+  margin-left: 4px;
+  margin-bottom: 2px;
+}
