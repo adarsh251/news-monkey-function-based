@@ -27,7 +27,7 @@ git clone https://github.com/adarsh251/news-monkey-function-based.git
 cd news-monkey-function-based
 npm install
 ```
-3. Create a .env file in the root directory and add your NewsAPI.org API key:
+3. Create a .env.local file in the root directory and add your NewsAPI.org API key:
 ```
 REACT_APP_NEWSAPP=your_newsapi_key
 ```
@@ -38,6 +38,4 @@ npm start
 ```
 2. Access the application in your browser at http://localhost:3000/
 
-## License
-This project is licensed under the MIT License.
 
